@@ -1,14 +1,14 @@
 ---
-title: blog
+title: home
 ---
 
 <html>
 <head>
-    <title>Gregory Gundersen</title>
+    <title>Junyou Simon Li</title>
     <meta charset='UTF-8'>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
 
-    <meta name='description' content='Gregory Gundersen is a PhD candidate at Princeton.'>
+    <meta name='description' content='Simon Li is a CS student assistant at University of Waterloo.'>
     <!-- A decent browser will parse this fine:
          https://webmasters.stackexchange.com/questions/92744. -->
     <meta name='keywords' content='
@@ -23,7 +23,7 @@ title: blog
         deep learning,
         computer science
     '>
-    <meta name='author' content='Gregory Gundersen'>
+    <meta name='author' content='Simon Li'>
 
     <link rel='shortcut icon' href='/favicon.png?v=e' />
     <link href='/css/blog.css' rel='stylesheet'/>
@@ -31,36 +31,31 @@ title: blog
     {% include mathjax.html %}
 </head>
 <body>
-    {% include nav.html %}
-    <div id='blog' class='wrap'>
-        <div id='intro'>
-            <div class='quote'>
-                <p>I learned very early the difference between knowing the name of something and knowing something.</p>
-                <a href='https://en.wikiquote.org/wiki/Richard_Feynman' target='_blank'>Richard Feynman</a>
-            </div>
-        </div>
-        <div id='posts' class='section'>
-            {% for post in site.posts %}
-                <div class='post-row'>
-                    <p class='post-title'>
-                        <a href="{{ post.url }}">
-                            {% katexmm %}
-                            {{ post.title }}
-                            {% endkatexmm %}
-                        </a>
-                    </p>
-                    <p class='post-date'>
-                        {{ post.date | date_to_long_string }}
-                    </p>
-                </div>
-                <p class='post-subtitle'>
-                    {% katexmm %}
-                    {{ post.subtitle }}
-                    {% endkatexmm %}
-                </p>
-                <span class='hidden'>{{ forloop.index }}</span>
-            {% endfor %}
-        </div>
-    </div>
+	<div id='landing'>
+        <h1>Hi there!</h1>
+        <p>I am Simon. Welcome to my personal website!</p>
+
+        <!-- <p>Want to learn more about me? Feel free to click <a href="about.html">here</a>!</p> -->
+		<ul id='links'>
+            <li>
+				<a href='about.html'>About me</a>
+			</li>
+			<li>
+				<a href='publications.html'>Publications</a>
+			</li>
+			<li>
+				<a href='/blog'>Blog</a>
+			</li>
+			<li>
+				<a href='https://github.com/SimonJunyouLi' target='_blank'>Code</a>
+			</li>
+            <li>
+                <a href='https://www.linkedin.com/in/junyou-li/' target='_blank'>Linkedin</a>
+            </li>
+			<li id='contact'>
+				simonjunyou[dot]li[at]gmail[dot]com
+			</li>
+		</ul>
+	</div>
 </body>
 </html>
