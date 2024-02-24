@@ -1,0 +1,694 @@
+
+<html>
+<head>
+    <title>Junyou Simon Li</title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+
+    <meta name='description' content='Simon Li is a CS student at University of Waterloo.'>
+
+    <!-- A decent browser will parse this fine:
+         https://webmasters.stackexchange.com/questions/92744. -->
+    <meta name='keywords' content='
+        machine learning,
+        statistical machine learning,
+        bayesian inference,
+        statistics,
+        computational statistics,
+        linear algebra,
+        numerical linear algebra,
+        statistical software,
+        deep learning,
+        computer science
+    '>
+    <meta name='author' content='Simon Li'>
+
+    <link rel='shortcut icon' href='/favicon.png?v=e' />
+    <link href='/css/blog.css' rel='stylesheet'/>
+
+    <script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  jax: ['input/TeX', 'output/HTML-CSS'],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    extensions: ['color.js']
+  },
+  messageStyle: 'none',
+  'HTML-CSS': { preferredFont: 'TeX', availableFonts: ['STIX','TeX'] }
+});
+</script>
+
+
+  <script type='text/javascript'
+          src='https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js'>
+  </script>
+  <!-- <script src='//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML' type='text/javascript'></script> -->
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.3/dist/katex.min.css" integrity="sha384-ThssJ7YtjywV52Gj4JE/1SQEDoMEckXyhkFVwaf4nDSm5OBlXeedVYjuuUd0Yua+" crossorigin="anonymous"> -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31890516-2"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-31890516-2');
+</script>
+</head>
+<body>
+    <div class='nav'>
+    <ul class='wrap'>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='publications.html'>Publications</a></li>
+        <li><a href='about.html'>About</a></li>
+
+        <!-- <li><a href='/blog'>Blog</a></li>
+        <li><a href='/feed.xml'>RSS</a></li> -->
+    </ul>
+</div>
+    <div id='blog' class='wrap'>
+        <div id='intro'>
+    <div class='quote'>
+        <p>I learned very early the difference between knowing the name of something and knowing something.</p>
+        <a href='https://en.wikiquote.org/wiki/Richard_Feynman' target='_blank'>Richard Feynman</a>
+    </div>
+</div>
+        <div id='tags'>
+    <ul id='tag-nav'>
+        
+        
+            <li><a href='/blog/tags/all'>All</a></li>
+        
+            <li><a href='/blog/tags/ml'>Machine learning</a></li>
+        
+            <li><a href='/blog/tags/la'>Linear algebra</a></li>
+        
+            <li><a href='/blog/tags/stats'>Probability and statistics</a></li>
+        
+            <li><a href='/blog/tags/bayes'>Bayesian inference</a></li>
+        
+            <li><a href='/blog/tags/sm'>Statistical modeling</a></li>
+        
+            <li><a href='/blog/tags/lm'>Linear models</a></li>
+        
+            <li><a href='/blog/tags/gp'>Gaussian processes</a></li>
+        
+            <li><a href='/blog/tags/mcmc'>Markov chain Monte Carlo</a></li>
+        
+            <li><a href='/blog/tags/nn'>Neural networks</a></li>
+        
+            <li><a href='/blog/tags/prog'>Programming</a></li>
+        
+            <li><a href='/blog/tags/econ'>Econometrics and finance</a></li>
+        
+            <li><a href='/blog/tags/process'>Research process</a></li>
+        
+            <li><a href='/blog/tags/uncat'>Uncategorized</a></li>
+        
+    </ul>
+</div>
+        <div id='posts' class='section'>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2024/01/04/bienaymes-identity/">
+                            
+                            Bienaymé's Identity
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        04 January 2024
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    In probability theory, Bienaymé's identity is a formula for the variance of random variables which are themselves sums of random variables. I provide a little intuition for the identity and then prove it.
+                    
+                </p>
+                <span class='hidden'>1</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2023/12/17/lognormal/">
+                            
+                            Log-Normal Distribution
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        17 December 2023
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    I derive some basic properties of the log-normal distribution.
+                    
+                </p>
+                <span class='hidden'>2</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2023/12/09/covariance-matrices/">
+                            
+                            High-Dimensional Variance
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        09 December 2023
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    A useful view of a covariance matrix is that it is a natural generalization of variance to higher dimensions. I explore this idea.
+                    
+                </p>
+                <span class='hidden'>3</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2023/10/29/correlation-hedging/">
+                            
+                            Correlation and Hedging
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        29 October 2023
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    A mean–variance optimizer will hedge correlated assets. I explain why and then work through a simple example.
+                    
+                </p>
+                <span class='hidden'>4</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2023/10/08/greeks/">
+                            
+                            The Greeks
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        08 October 2023
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    In finance, the "Greeks" refer to the partial derivatives of an option pricing model with respect to its inputs. They are important for understanding how an option's price may change. I discuss the Black–Scholes Greeks in detail.
+                    
+                </p>
+                <span class='hidden'>5</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2023/09/10/deriving-vix/">
+                            
+                            Deriving the VIX
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        10 September 2023
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    The VIX is a benchmark for market-implied volatility. It is computed from a weighted average of variance swaps. I first derive the fair strike for a variance swap and then discuss the VIX's approximation of this formula.
+                    
+                </p>
+                <span class='hidden'>6</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2023/08/19/atm-approximation/">
+                            
+                            Estimating ATM Option Prices
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        19 August 2023
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    I work through a well-known approximation of the Black–Scholes price of at-the-money (ATM) options.
+                    
+                </p>
+                <span class='hidden'>7</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2023/06/03/hsia-proof-black-scholes/">
+                            
+                            Proof the Binomial Model Converges to Black–Scholes
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        03 June 2023
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    The binomial options-pricing model converges to Black–Scholes as the number of steps in fixed physical time goes to infinity. I present Chi-Cheng Hsia's 1983 proof of this result.
+                    
+                </p>
+                <span class='hidden'>8</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2023/06/03/binomial-options-pricing-model/">
+                            
+                            Binomial Options-Pricing Model
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        03 June 2023
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    I present a simple yet useful model for pricing European-style options, called the binomial options-pricing model. It provides good intuition into pricing options without any advanced mathematics.
+                    
+                </p>
+                <span class='hidden'>9</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2023/05/13/fortunai/">
+                            
+                            fortunai
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        13 May 2023
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    I describe the process of using ChatGPT-3.5 to write a program that uses OpenAI's API. The program generates LLM fortunes a la the Unix command 'fortune'.
+                    
+                </p>
+                <span class='hidden'>10</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2023/02/11/dimensional-analysis/">
+                            
+                            Problem Solving with Dimensional Analysis
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        11 February 2023
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    Dimensional analysis is the technique of analyzing relationships through their base quantities. I demonstrate the power of this approach by approximating a Gaussian integral without calculus.
+                    
+                </p>
+                <span class='hidden'>11</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2023/02/01/estimating-square-roots/">
+                            
+                            Estimating Square Roots in Your Head
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        01 February 2023
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    I explore an ancient algorithm, sometimes called Heron's method, for estimating square roots without a calculator.
+                    
+                </p>
+                <span class='hidden'>12</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2023/01/26/carr-madan/">
+                            
+                            Carr–Madan Formula
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        26 January 2023
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    In the options-pricing literature, the Carr–Madan formula equates a derivative's nonlinear payoff function with a portfolio of options. I describe and prove this relationship.
+                    
+                </p>
+                <span class='hidden'>13</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/12/07/one-period-binomial-model/">
+                            
+                            One-Period Binomial Model
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        07 December 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    The binomial options-pricing model is a numerical method for valuing options. I explore this model over a single time period and focus on two key ideas, the no-arbitrage condition and risk-neutral pricing.
+                    
+                </p>
+                <span class='hidden'>14</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/09/17/pca/">
+                            
+                            Principal Component Analysis
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        17 September 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    Principal component analyis (PCA) is a simple, fast, and elegant linear method for data analysis. I explore PCA in detail, first with pictures and intuition, then with linear algebra and detailed derivations, and finally with code.
+                    
+                </p>
+                <span class='hidden'>15</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/08/28/matrices-as-functions-and-data/">
+                            
+                            Matrices as Functions, Matrices as Data
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        28 August 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    I discuss two views of matrices: matrices as linear functions and matrices as data. The second view is particularly useful in understanding dimension reduction methods.
+                    
+                </p>
+                <span class='hidden'>16</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/08/13/hmm-scaling-factors/">
+                            
+                            Scaling Factors for Hidden Markov Models
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        13 August 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    Inference for hidden Markov models (HMMs) is numerically unstable. A standard approach to resolving this instability is to use scaling factors. I discuss this idea in detail.
+                    
+                </p>
+                <span class='hidden'>17</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/08/09/weighted-ols/">
+                            
+                            Weighted Least Squares
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        09 August 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    Weighted least squares (WLS) is a generalization of ordinary least squares in which each observation is assigned a weight, which scales the squared residual error. I discuss WLS and then derive its estimator in detail.
+                    
+                </p>
+                <span class='hidden'>18</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/06/29/sharpe-ratio/">
+                            
+                            The Sharpe Ratio
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        29 June 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    The Sharpe ratio measures a financial strategy's performance as the ratio of its reward to its variability. I discuss this metric in detail, particularly its relationship to the information ratio and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">t</span></span></span></span>-statistics.
+                    
+                </p>
+                <span class='hidden'>19</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/06/18/how-dangerous-is-biking-in-nyc/">
+                            
+                            How Dangerous Is Biking in New York?
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        18 June 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    I estimate my probability of serious injury or death from bike commuting to work in New York, using public data from city's Department of Transportation.
+                    
+                </p>
+                <span class='hidden'>20</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/06/04/moving-averages/">
+                            
+                            Moving Averages
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        04 June 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    I discuss moving or rolling averages, which are algorithms to compute means over different subsets of sequential data.
+                    
+                </p>
+                <span class='hidden'>21</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/05/24/square-root-of-time-rule/">
+                            
+                            Square Root of Time Rule
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        24 May 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    A common heuristic for time-aggregating volatility is the square root of time rule. I discuss the big idea for this rule and then provide the mathematical assumptions underpinning it.
+                    
+                </p>
+                <span class='hidden'>22</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/05/17/exponential-decay/">
+                            
+                            Exponential Decay
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        17 May 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    Many phenomena can be modeled as exponential decay. I discuss this model in detail, focusing on natural exponential decay (base <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">e</span></span></span></span>) and various useful properties.
+                    
+                </p>
+                <span class='hidden'>23</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/04/12/factor-models/">
+                            
+                            Factor Modeling in Finance
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        12 April 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    I discuss multi-factor modeling, which generalizes many early financial models into a common prediction and risk framework.
+                    
+                </p>
+                <span class='hidden'>24</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/03/27/research-and-adventure/">
+                            
+                            Research and Adventure
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        27 March 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    During my PhD, I went hiking alone in a remote region of Iceland. Over the years, I've come to view this trip as analogous to the PhD process. Graduate school was hard, but on the warm days, the views were spectacular.
+                    
+                </p>
+                <span class='hidden'>25</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/03/20/conjugate-gradient-descent/">
+                            
+                            Conjugate Gradient Descent
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        20 March 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    Conjugate gradient descent (CGD) is an iterative algorithm for minimizing quadratic functions. CGD uses a kind of orthogonality (conjugacy) to efficiently search for the minimum. I present CGD by building it up from gradient descent.
+                    
+                </p>
+                <span class='hidden'>26</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/03/06/capm/">
+                            
+                            The Capital Asset Pricing Model
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        06 March 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    In finance, the capital asset pricing model (CAPM) was the first theory to measure systematic risk. The CAPM argues that there is a single type of risk, market risk. I derive the CAPM from the mean–variance framework of modern portfolio theory.
+                    
+                </p>
+                <span class='hidden'>27</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/03/03/generalized-least-squares/">
+                            
+                            Generalized Least Squares
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        03 March 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    I discuss generalized least squares (GLS), which extends ordinary least squares by assuming heteroscedastic errors. I prove some basic properties of GLS, particularly that it is the best linear unbiased estimator, and work through a complete example.
+                    
+                </p>
+                <span class='hidden'>28</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/02/27/positive-definite/">
+                            
+                            Understanding Positive Definite Matrices
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        27 February 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    I discuss a geometric interpretation of positive definite matrices and how this relates to various properties of them, such as positive eigenvalues, positive determinants, and decomposability. I also discuss their importance in quadratic programming.
+                    
+                </p>
+                <span class='hidden'>29</span>
+            
+                <div class='post-row '>
+                    <p class='post-title'>
+                        <a href="/blog/2022/02/08/gauss-markov-theorem/">
+                            
+                            The Gauss–Markov Theorem
+                            
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        08 February 2022
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    
+                    I discuss and prove the Gauss–Markov theorem, which states that under certain conditions, the least squares estimator is the minimum-variance linear unbiased estimator of the model parameters.
+                    
+                </p>
+                <span class='hidden'>30</span>
+            
+        </div>
+        <div id='more'>
+            <a href='/blog/tags/all'>See all posts</a>
+        </div>
+    </div>
+</body>
+</html>
