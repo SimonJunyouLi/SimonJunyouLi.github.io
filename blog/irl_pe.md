@@ -1,5 +1,5 @@
 ---
-title: Inverse Reinforcement Learning for Team Sports: Valuing Actions and Players
+title: Inverse Reinforcement Learning for Team Sports - Valuing Actions and Players
 subtitle: A method that alternates single-agent IRL to learn a reward function for multiple agents.
 layout: default
 date: 2024-02-13
