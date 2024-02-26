@@ -34,24 +34,25 @@ autor: Junyou Simon Li
 <body>
     {% include nav.html %}
     <h1>Expository Notes</h1>
-    <!-- <p>
-        Recently, I have started to taking notes for some interesting papers that I am reading. Here is a selection of them.
-    </p> -->
-    <div id='tags'>
-        <ul id='tag-nav'>
-            <li><a href='/blog/tags/all'>All</a></li>
-        
-            <li><a href='/blog/tags/ml'>Machine learning</a></li>
+    <div id='blog' class='wrap'>
+        <div>
+            Recently, I have started to taking notes for some interesting papers that I am reading. Here is a selection of them.
+        </div>
+        <div id='tags'>
+            <ul id='tag-nav'>
+                <li><a href='/blog/tags/all'>All</a></li>
+            
+                <li><a href='/blog/tags/ml'>Machine learning</a></li>
 
-            <li><a href='/blog/tags/rl'>Reinforcement learning</a></li>
-        
-            <li><a href='/blog/tags/mcmc'>Markov chain Monte Carlo</a></li>
+                <li><a href='/blog/tags/rl'>Reinforcement learning</a></li>
+            
+                <li><a href='/blog/tags/mcmc'>Markov chain Monte Carlo</a></li>
 
-            <li><a href='/blog/tags/ms'>Motion Syntehsis</a></li>
-                
-        </ul>
-    </div>
-    <!-- <div id='blog' class='wrap'>
+                <li><a href='/blog/tags/ms'>Motion Syntehsis</a></li>
+                    
+            </ul>
+        </div>
+        <!-- <div id='blog' class='wrap'>
 
         <div id='posts' class='section'>
             {% for post in site.posts %}
@@ -75,6 +76,7 @@ autor: Junyou Simon Li
                 <span class='hidden'>{{ forloop.index }}</span>
             {% endfor %}
         </div> -->
+        </div>
     </div>
 </body>
 </html>
