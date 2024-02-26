@@ -1,40 +1,24 @@
+---
+title: about
+---
 
 <html>
 <head>
-    <title>Junyou Simon Li</title>
+    <title>{{ page.author }}</title>
     <meta charset='UTF-8'>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
 
-    <meta name='description' content='Simon Li is a CS student at University of Waterloo.'>
+    <meta name='description' content='Dhrumil Patel is a 3rd year CS student at Waterloo.'>
     <!-- A decent browser will parse this fine:
          https://webmasters.stackexchange.com/questions/92744. -->
-    <meta name='keywords' content='
-        machine learning,
-        statistical machine learning,
-        bayesian inference,
-        statistics,
-        computational statistics,
-        linear algebra,
-        numerical linear algebra,
-        statistical software,
-        deep learning,
-        computer science
-    '>
-    <meta name='author' content='Simon Li'>
+    <meta name='author' content={{ page.author }}>
 
     <link rel='shortcut icon' href='/favicon.png?v=e' />
-    <link href='/css/main.css' rel='stylesheet'/>
+    <link href='/css/blog.css' rel='stylesheet'/>
+    <link href='/css/landing.css' rel='stylesheet'/>
 </head>
 <body>
-    <div class='nav'>
-        <ul class='wrap'>
-            <li><a href='/index'>Home</a></li>
-            <li><a href='/about'>About</a></li>
-            <li><a href='/notes'>Notes</a></li>
-    
-            <!-- <li><a href='https://scholar.google.com/citations?hl=en&user=vwCuOPQAAAAJ' target='_blank'>Google Scholar</a></li> -->
-        </ul>
-    </div>
+    {% include nav.html %}
     <div id='papers'>
         <h1>Publications</h1>
         
