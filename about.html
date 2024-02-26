@@ -4,79 +4,71 @@ title: about
 
 <html>
 <head>
-    <title>{{ page.author }}</title>
+    <title>Junyou Simon Li</title>
     <meta charset='UTF-8'>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
 
-    <meta name='description' content='Dhrumil Patel is a 3rd year CS student at Waterloo.'>
+    <meta name='description' content='Simon Li is a CS student at University of Waterloo.'>
     <!-- A decent browser will parse this fine:
          https://webmasters.stackexchange.com/questions/92744. -->
-    <meta name='author' content={{ page.author }}>
+    <meta name='keywords' content='
+        machine learning,
+        statistical machine learning,
+        bayesian inference,
+        statistics,
+        computational statistics,
+        linear algebra,
+        numerical linear algebra,
+        statistical software,
+        deep learning,
+        computer science
+    '>
+    <meta name='author' content='Simon Li'>
 
     <link rel='shortcut icon' href='/favicon.png?v=e' />
     <link href='/css/blog.css' rel='stylesheet'/>
-    <link href='/css/landing.css' rel='stylesheet'/>
+
+    {% include mathjax.html %}
 </head>
 <body>
-    <div id="landing">
-        <h1>A bit more...</h1>
-        <p>I've also played around with startups:</p>
-        <ul>
-            <li>
-                BitSwap: An exchange for BitClout and Ethereum, featured in <a href="https://www.newyorker.com/tech/annals-of-technology/the-dark-democratizing-power-of-the-social-media-stock-market" target="_blank">NYT</a>, once valued at $10 million
-            </li>
-            <li>
-                A GenAI startup to build presentations / marketing content for startups (this only really stayed a concept)
-            </li>
-        </ul>
-        <p>and competed in <a href="https://devpost.com/dhrumilp15">40+ hackathons</a>. My favourite hacks are simple, but meaningful:</p>
-        <ul>
-            <li>
-                A matchmaking engine based on <a href="https://gregorygundersen.com/blog/2018/07/17/cca/">CCA</a> for the game Sky from ThatGameCompany (HackMIT 2022, 2nd place sponsor prize)
-            </li>
-            <li>
-                A note-taker for my family physician (Hack The North 2019, sponsor prize)
-            </li>
-            <li>
-                An arcade fighter game, controlled by a glove (THacks 2 (2017), 3rd place)
-            </li>
-        </ul>
-        <p>
-            I really love stories (books, <a href="https://myanimelist.net/profile/drumpelstiltskin" target="_blank">anime</a>, manhwa/webtoon) and climbing!
-        </p>
-        <p>
-            Some of my favourite manhwa/webtoon (in no particular order 🤭):
-        </p>
-        <ul>
-            <li>
-                Flow
-            </li>
-            <li>
-                Sweet Home
-            </li>
-            <li>
-                Tower of God
-            </li>
-            <li>
-                Arma, My Deepest Secret, Purple Hyacinth, Hand Jumper, Hero Killer, Eleceed, unOrdinary, Code Adam
-            </li>
-        </ul>
-        <p>I'm always on the lookout for more stories to read, so please share your favourite stories!</p>
-        <p>Feel free to reach out at:</p>
-        <ul>
-            <li>
-                dhrumilp15[at]gmail[dot]com
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/dhrumilp15">Linkedin</a>
-            </li>
-            <li>
-                dhrumilp15 on discord
-            </li>
-            <li>
-                <a href="https://instagram.com/dr_hoomil/">Instagram</a>
-            </li>
+    <div class='nav'>
+        <ul class='wrap'>
+            <li><a href='/index'>Home</a></li>
+            <li><a href='/publications'>Publications</a></li>
+            <li><a href='/notes'>Notes</a></li>
+    
+            <!-- <li><a href='https://scholar.google.com/citations?hl=en&user=vwCuOPQAAAAJ' target='_blank'>Google Scholar</a></li> -->
         </ul>
     </div>
+	<div id='landing'>
+        <h1>Junyou Simon Li</h1>
+        <p>Hi! It's very nice to e-meet you. 😁</p>
+        <p>I am Simon, a 3B/4A CS student at the University of Waterloo and previously an exchange student at EPFL, the Swiss Federal Institute of Technology Lausanne.</p>
+        <p>Currently, I work as an machine learning research assistant at National Research Council Canada and University of Waterloo. Before this, I was an machine learning engineer at Eon Media.</p>
+        <p>Some of the topics I find exciting are: Reinforcement Learning, Computer Vision, Generative AI</p>
+        <p>In particular, I'm interested in: </p>
+
+        <!-- <p>Want to learn more about me? Feel free to click <a href="about.html">here</a>!</p> -->
+		<ul id='links'>
+			<li>
+				Inverse Constrained Reinforcement Learning
+			</li>
+			<li>
+				Motion Synthesis
+			</li>
+			<li>
+				Multi-Modal Generative AI System
+			</li>
+            <li>
+                Speech Enhancement
+            </li>
+		</ul>
+        <p>Feel free to chat with me about my past experiences and research endeavors!</p>
+        <ul id="links">			
+            <li id='contact'>
+				simonjunyou[dot]li[at]gmail[dot]com
+            </li>
+        </ul>
+	</div>
 </body>
 </html>
