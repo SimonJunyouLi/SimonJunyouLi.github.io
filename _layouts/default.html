@@ -4,9 +4,9 @@
     <meta charset='UTF-8'>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
 
-    <meta name='description' content='Simon Li is a CS student at University of Waterloo.'>
+    <meta name='description' content='Dhrumil Patel is a 3rd year CS student at UWaterloo.'>
     <meta name='keywords' content='{{ page.keywords }}'>
-    <meta name='author' content='Simon Li'>
+    <meta name='author' content='Dhrumil Patel'>
 
     <link href='/css/blog.css' rel='stylesheet'/>
     <link href='/css/trac.css' rel='stylesheet'/>
@@ -32,6 +32,11 @@
     </div>
     <div class='wrap article'>
         {{ content }}
+    </div>
+    <div id='bibliography'>
+        <div class='wrap'>
+            {% bibliography --cited %}
+        </div>
     </div>
 </div>
 </body>

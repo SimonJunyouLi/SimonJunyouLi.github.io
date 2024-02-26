@@ -1,11 +1,6 @@
----
-title: home
-author: Dhrumil Patel
----
-
 <html>
 <head>
-    <title>{{ page.author }}</title>
+    <title></title>
     <meta charset='UTF-8'>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
 
@@ -24,19 +19,37 @@ author: Dhrumil Patel
         deep learning,
         computer science
     '>
-    <meta name='author' content={{ page.author }}>
+    <meta name='author' content=>
 
     <link rel='shortcut icon' href='/favicon.png?v=e' />
     <link href='/css/blog.css' rel='stylesheet'/>
     <link href='/css/landing.css' rel='stylesheet'/>
 
-    {% include mathjax.html %} 
+    <script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  jax: ['input/TeX', 'output/HTML-CSS'],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    extensions: ['color.js']
+  },
+  messageStyle: 'none',
+  'HTML-CSS': { preferredFont: 'TeX', availableFonts: ['STIX','TeX'] }
+});
+</script>
+
+<script src='//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML' type='text/javascript'></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous"> 
 </head>
 <body>
     <div id="landing">
-        <h1>{{ page.author }}</h1>
+        <h1>Dhrumil Patel</h1>
         <p>Welcome to my personal blog! I'm Dhrumil and I'm currently a CS student at the University of Waterloo.</p>
-        <p>Feel free to chat with me about my previous work at Snowflake, Roblox, The Vector Institute, A Thinking Ape, Flinks, or at the University of Waterloo! <a href="/about">more</a></p>
+        <p>Feel free to chat with me about my previous work at Snowflake, Roblox, The Vector Institute, A Thinking Ape, Flinks, or at the University of Waterloo!</p>
+        <p>All opinions are my own (more)I really enjoy stories (books, <a href="https://myanimelist.net/profile/drumpelstiltskin">anime</a>, webtoon, ...) and climbing! Let's talk!</p>
+        </p>
         <ul id="links">
             <li>
                 <a href="/blog">Blog</a>
