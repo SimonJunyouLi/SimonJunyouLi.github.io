@@ -71,13 +71,13 @@ games extend mdp
 
 mdp is a single-agent markov game w/ `k=1`
 
-policy $\pi_i = S \to PD(A_i)$
+policy {% katexmm %} $\pi_i = S \to PD(A_i)$ {% endkatexmm %}
 
 action probability is a function of game state
 
 actions are independent given current game state
 
-game value function $G^{\pi_i, \pi_{i-1}}_i(s)$
+game value function {% katexmm %} $G^{\pi_i, \pi_{i-1}}_i(s)$ {% endkatexmm %}
 
 home & away as two agents → same action space
 
@@ -85,10 +85,12 @@ home & away as two agents → same action space
 
 **marginal MDP $M(\pi_{-i}) \coloneqq \langle S, A_i, r^\prime, \gamma, T^\prime \rangle$** where
 
+{% katexmm %}
 $$
 r^\prime(s,a_i) = \sum_{a_{-i}}r_i(s,a_i,a_{-i}) \cdot \pi_{-i}(a_{-i}|s) \\
 T^\prime(s^\prime|a_i,s) = \sum_{a_{-i}}T(s^\prime|a_i, a_{-i}, s) \cdot \pi_{-i}(a_{-i}|s)
 $$
+{% endkatexmm %}
 
 ## IRL with Domain Knowledge
 
@@ -98,9 +100,11 @@ maximum entropy IRL → interpretable linear model
 
 reward for trajectory $\zeta$ is cumulative reward of visited states
 
+{% katexmm %}
 $$
 r(\zeta) = \sum_{s_j \in \zeta} \theta^T f_{s_j} = \theta^T f_\zeta
 $$
+{% endkatexmm %}
 
 with reward weights $\theta \in \mathbb{R}^k, r_\theta(s) = \theta^Tf_s$
 
@@ -110,11 +114,13 @@ if follows max entroy
 
 probability can be estimated by 
 
+{% katexmm %}
 $$
 P(\zeta | \theta, T) = \frac{e^{r_\zeta}}{Z(\theta, T)} \Pi_{s_{t+1}, a_t, s_t \in \zeta} P_T(s_{t+1}|a_t,s_t)
 $$
+{% endkatexmm %}
 
-where $Z(\theta, T)$ is partition function and T is transition distribution
+where {% katexmm %} $Z(\theta, T)$ {% endkatexmm %} is partition function and T is transition distribution
 
 ### maxent irl w/ dk
 
@@ -126,10 +132,12 @@ want to
 
 combine rule reward w/  maxent irl
 
+{% katexmm %}
 $$
 \hat{\theta} = \argmax_\theta L(\theta) + \lambda k(r_\theta, r_K) \\
 \text{where } r_\theta = \theta^T \psi, r_K = \theta^T_K \psi, \psi = [f_{s_1}, \dots, f_{s_n}] \in \mathbb{R}^{k \times n}
 $$
+{% endkatexmm %}
 
 is the state feature matrix
 
@@ -139,23 +147,27 @@ measurement of the difference between two probability distribution
 
 unbiased estimation of squared MMD 
 
+{% katexmm %}
 $$
 \begin{align*}
 \hat{d}^2_{\mathcal{H}_k}(X,Y) &= \frac{1}{n^2_x} \sum^{n_x}_{i=1}\sum^{n_x}_{j=1}k(x_i,x_j) + \frac{1}{n^2_y}\sum^{n_y}_{i=1}\sum^{n_y}_{j=1}k(y_i,y_j) \\ 
 &- \frac{2}{n_x n_y}\sum^{n_x}_{i=1}\sum^{n_y}_{j=1}k(x_i,y_j)
 \end{align*}
 $$
+{% endkatexmm %}
 
-where $k(x,x^\prime)$ is a kernel function 
+where {% katexmm %} $k(x,x^\prime)$ {% endkatexmm %} is a kernel function 
 
-the optimal $\hat{\theta}$ is derived by
+the optimal {% katexmm %} $\hat{\theta}$ {% endkatexmm %} is derived by
 
+{% katexmm %}
 $$
 \begin{align*}
 \hat{\theta} &= \argmax_\theta L(\theta) - \alpha\hat{d}^2_{\mathcal{H}_k}(R_\theta, R_K) \\
 &= \argmax_\theta L(\theta) + 2\alpha k(r_\theta, r_K)
 \end{align*}
 $$
+{% endkatexmm %}
 
 ## evaluating learned reward and policy
 
@@ -187,10 +199,8 @@ with regularization, way more stable and converges
 
 difference made by an action
 
+{% katexmm %}
 $$
 \text{impact}_{\{H,A\}}(s,a) \equiv Q^{\pi^{\hat{\theta}}_{\{H,A\}}}_{\{H,A\}}(s,a)-V^{\pi^{\hat{\theta}}_{\{H,A\}}}_{\{H,A\}}(s)
 $$
-
-future
-
-implementation & evaluation on other sports
+{% endkatexmm %}
