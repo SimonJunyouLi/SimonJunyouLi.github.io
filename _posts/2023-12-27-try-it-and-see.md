@@ -7,6 +7,12 @@ keywords: software engineering, metacognition, research, applied research
 published: true
 ---
 
+{% katexmm %}
+$$
+r(\zeta) = \sum_{s_j \in \zeta} \theta^T f_{s_j} = \theta^T f_\zeta
+$$
+{% endkatexmm %}
+
 I asked my friend, who is much further in his SWE career, how to improve as a software engineer.
 
 He started with just, **scale**, that I should build projects at "large-scale". "Large-scale", as I later found out, generally means that your service needs to support high loads, respond really fast, or process extremely large amounts of data (sometimes you need to do more than one of these things). To meet these requirements, you make guarantees about your service through metrics like availability, latency or throughput. I initially thought that this was something you only really encounter in infra teams, but my friend disagreed. It's something that can be observed through any project **at scale**.
