@@ -1,7 +1,7 @@
 highlighter: rouge
 permalink: /blog/:year/:month/:day/:title/
 environment: prod
-domain: simonjunyou.li.github.io
+# domain: simonjunyou.li.github.io
 url: https://simonjunyou.li.github.io  # Sitemap base URL.
 repository: SimonJunyouLi/simonjunyou.li.github.io
 plugins:
