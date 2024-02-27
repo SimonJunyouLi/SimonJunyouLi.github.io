@@ -1,0 +1,48 @@
+---
+title: about
+---
+
+<html>
+<head>
+    <title>{{ page.author }}</title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+
+    <meta name='description' content='Simon Li is a 3rd year CS student at Waterloo.'>
+    <!-- A decent browser will parse this fine:
+         https://webmasters.stackexchange.com/questions/92744. -->
+    <meta name='author' content={{ page.author }}>
+
+    <link rel='shortcut icon' href='/favicon.png?v=e' />
+    <link href='/css/blog.css' rel='stylesheet'/>
+    <link href='/css/landing.css' rel='stylesheet'/>
+</head>
+<body>
+    {% include nav.html %}
+    <div id="landing">
+        <p>I currently work as a research assistant for the Naionatl Research Council Canada and the University of Waterloo. My publications are listed <a href='/publications'>here</a>. Some of the projects I'm involved in inclues</p>
+        <ul>
+            <li>Audio Classification Models</li>
+            <li>Image-to-Image Translations</li>
+            <li>Cross-Modality Learning/Generation</li>
+            <li>Motion Syntehsis</li>
+        </ul>
+        <p>Previously, I have also conducted independent research with <a href='https://www.structuralbioinformatics.com/author.shtml' target='_blank'>Forbes. J Burkowski</a> on protein folding and vaccine designs. The research extended <a href='https://www.pnas.org/doi/pdf/10.1073/pnas.77.11.6309' target='_blank'>Nussinov and Jacobson</a>'s work by proposing a novel 7-Letter Scoring Scheme for protein folding. The proposed method achieved similar effectiveness while being 29% more stable compared to Pfizer COVID-19 vaccine. The full report can be found <a href='https://github.com/SimonJunyouLi/7-letter-scoring-scheme'>here</a>.</p>
+
+        <p>Beside the aforementioned topics, some of my research interests are</p>
+        <ul>
+            <li>Reinforcement Learning</li>
+            <li>Computational Game Theory</li>
+            <li>Natural Language Processing</li>
+        </ul>
+        <p>Recently, I have been reading articles written by <a href='https://cs.uwaterloo.ca/~ppoupart/' target='_blank'>Pascal Poupart</a> on reinforcement learning, specifically Inverse Constrained Reinforcement Learning (ICRL), and <a href='https://people.epfl.ch/boi.faltings?lang=en' target='_blank'>Boi Faltings</a>, my professor for the reinforcement learning course in EPFL, on multi-agent systems and computational game theories. The notes for the papers that I read can be found <a href='/notes'>here</a>.</p>
+        <!-- <p>In particular, I'm interested and researching in Inverse Constrained Reinforcement Learning, Motion Synthesis, Cross Modality Generation, and Speech Enhancement. </p> -->
+        <p>Feel free to chat with me about my past experiences and research endeavors!</p>
+        <ul id="links">			
+            <li id='contact'>
+				simonjunyou[dot]li[at]gmail[dot]com
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
