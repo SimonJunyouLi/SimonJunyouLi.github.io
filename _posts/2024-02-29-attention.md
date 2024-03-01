@@ -68,6 +68,6 @@ Therefore, we have that the output of the self-attention would be
 
 ## ***Multi-Head*** Self-Attention
 
-Just like a convolution layer where we can run multiple convolutions, we can run **mutiple** attention heads per layer! Suppose the output of each head $h$ is given by $Z$ described above. Then, the final output is obtained by concatenating all the individual head's output and apply a linear transformation
+Just like a convolution layer where we can run multiple convolutions, we can run **mutiple** attention heads per layer! Suppose the output of each head $h_i$ is given by $Z_i$ described above. Then, the final output is obtained by concatenating all the individual head's output and apply a linear transformation
 {% katexmm %}$$Z = [Z_1, \dots, Z_H]W_O$${% endkatexmm %}
 where {% katexmm %}$W_O \in \R^{HD_V\times D}${% endkatexmm %} is a learnable parameter. 
