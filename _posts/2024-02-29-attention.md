@@ -49,3 +49,25 @@ After we obtained the raw similarity by using the inner product, we would scale 
 Lastly, we normalize the value after scaling with softmax to obtain a probability distribution. 
 
 {% katexmm %}$$P = \text{softmax} \left(\frac{QK^T}{\sqrt{D_K}}\right)$${% endkatexmm %}
+
+## ***Self***-Sttention
+
+Self-attention is a special case of attention where {% katexmm %}$T \coloneqq T_{in} = T_{out}${% endkatexmm %} and that all of {% katexmm %}$V, K, Q${% endkatexmm %} are derived from the **same** input token sequence {% katexmm %}$X \in \R^{T\times D}${% endkatexmm %}. This means that to calculate {% katexmm %}$V, K, Q${% endkatexmm %}, we have learnable parameters {% katexmm %}$W_V, W_K, W_Q${% endkatexmm %} such that 
+
+{% katexmm %}$$\begin{aligned}
+V &= XW_V \in \R^{T\times D}, W_V \in \R^{D \times D} \\
+K &= XW_K \in \R^{T\times D_K}, W_k \in \R^{D \times D_K} \\
+Q &= XW_Q \in \R^{T\times D_K}, W_Q \in \R^{D \times D_K}
+\end{aligned}$${% endkatexmm %}
+
+where {% katexmm %}$D_K${% endkatexmm %} is the dimension of the Keys and Queries tokens.
+
+Therefore, we have that the output of the self-attention would be 
+
+{% katexmm %}$$ Z = \text{softmax} \left( \frac{X W_Q W_K^T X^T}{\sqrt{D_K}} XW_V \right) $${% endkatexmm %}
+
+## ***Multi-Head*** Self-Attention
+
+Just like a convolution layer where we can run multiple convolutions, we can run **mutiple** attention heads per layer! Suppose the output of each head $h$ is given by $Z$ described above. Then, the final output is obtained by concatenating all the individual head's output and apply a linear transformation
+{% katexmm %}$$Z = [Z_1, \dots, Z_H]W_O$${% endkatexmm %}
+where {% katexmm %}$W_O \in \R^{HD_V\times D}${% endkatexmm %} is a learnable parameter. 
